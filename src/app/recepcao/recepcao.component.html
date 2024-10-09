@@ -1,0 +1,88 @@
+<div class="container">
+  <!-- RECEPÇÃO -->
+  <div *ngIf="showRecepcao == '0'">
+    <h1>Escolha sua área de interesse</h1>
+    <h4>Ortodontia, implantes, emergência...</h4>
+    <div class="container-search">
+      <div class="search">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-search"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+          />
+        </svg>
+        <input placeholder=" Procure por localização" />
+      </div>
+      <div class="selecionar">
+        <form>
+          <select id="opcoes" name="opcoes">
+            <option value="" disabled selected>
+              Procure por especialidade:
+            </option>
+            <option value="opcao1">Implantes</option>
+            <option value="opcao2">Ortodontia</option>
+            <option value="opcao3">Pediatria</option>
+            <option value="opcao4">Limpeza dental</option>
+            <option value="opcao5">Restauração</option>
+          </select>
+        </form>
+      </div>
+    </div>
+    <br />
+    <h1>Profissionais qualificados na sua área!</h1>
+    <div class="map-container">
+      <img
+        style="height: 350px"
+        src="https://learn.microsoft.com/en-us/bingmaps/rest-services/media/seattlecenteryroadpoint.png"
+        alt="Imagem de mapa"
+      />
+    </div>
+    <button class="btn btn-primary" (click)="showRecepcao = '1'">Pesquisar</button>
+  </div>
+  <!-- RESULTADOS -->
+  <div *ngIf="showRecepcao == '1'">
+    <button class="btn btn-primary" (click)="showRecepcao = '0'">Voltar</button>
+    <div class="dentistas">
+      <ul>
+        <li>
+          Clinica Dentes Brancos
+          <div class="dentista">
+            <p>Dentista Marcos</p>
+            <p>Especializado em implantes</p>
+            <p class="avaliacao">Avaliação: 4/5</p>
+          </div>
+        </li>
+        <li>
+          Consultório do Almir
+          <div class="dentista">
+            <p>Dentista Almir</p>
+            <p>Especializado em implantes e aparelhos ortodonticos</p>
+            <p class="avaliacao">Avaliação: 3/5</p>
+          </div>
+        </li>
+        <li>
+          Odonto Company
+          <div class="dentista">
+            <p>Dentista Vasco</p>
+            <p>Especializado em implantes e cirurgias</p>
+            <p class="avaliacao">Avaliação: 5/5</p>
+          </div>
+        </li>
+        <li>
+          Clinica Dentes Brancos
+          <div class="dentista">
+            <p>Dentista Fabio</p>
+            <p>Especializado em implantes</p>
+            <p class="avaliacao">Avaliação: 4/5</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

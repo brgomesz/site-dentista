@@ -1,0 +1,107 @@
+* {
+  list-style: none;
+}
+
+.container {
+  text-align: center;
+  display: flex;
+  // justify-content: center; Esse aqui serve para alinhar no centro verticalmente
+  align-items: center;
+  height: auto;
+  border: 1px solid #bebebe;
+  flex-direction: column;
+  padding-top: 50px;
+  width: 550px;
+  background-color: rgba(128, 128, 128, 0.123);
+}
+
+h4 {
+  color: rgba(128, 128, 128, 0.479);
+}
+
+.search {
+  border: solid 2px rgba(128, 128, 128, 0.479);
+  border-radius: 10px;
+  //width: 350px;
+
+  background-color: white;
+}
+input,
+input:focus-visible {
+  border: 0px;
+  outline: none;
+  box-shadow: none;
+}
+
+.selecionar {
+  margin-top: 20px;
+}
+select {
+  width: 350px;
+  padding: 0 14px 0 14px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.container-search {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(60, 170, 124);
+  border-radius: 20px;
+  justify-content: center;
+  padding: 30px;
+}
+
+// select {
+//     appearance: none; /* Padrão */}
+
+select {
+  -webkit-appearance: none; /* Para navegadores baseados em WebKit */
+  -moz-appearance: none; /* Para Firefox */
+  appearance: none; /* Padrão */
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCIgdmlld0JveD0iMCAwIDEwIDEwIj48cGF0aCBkPSJNNSA3bC01LTUgMS0xIDQgNCA0LTRsMSAxLTUgNXoiLz48L3N2Zz4=")
+    no-repeat right; /* Imagem transparente */
+  background-color: white; /* Cor de fundo */
+  border: 1px solid #ccc; /* Borda */
+}
+
+.dentistas {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  // align-items: center; centraliza verticalmente 
+  height: auto;
+ 
+}
+
+ul {
+  padding: 10px 10px 10px 10px;
+  border: solid 1px black;
+  width: 500px;
+}
+
+li{
+  //border: solid 1px black;
+  background-color: rgb(210, 214, 209);
+  margin-top: 20px;
+  width: auto;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.dentista{
+  background-color: rgb(210, 214, 209);
+  text-align: left;
+  height: 68%;
+  padding:10px;
+ 
+}
+
+.avaliacao{
+  text-align: right;
+  padding-right: 30px;
+}
+
+.btn{
+  margin-bottom: 20px;
+}

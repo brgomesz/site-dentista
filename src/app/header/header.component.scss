@@ -1,0 +1,14 @@
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: rgb(60, 170, 124) !important;
+}
+img{
+    height: 40px;
+    padding-right:10px ;
+}
+
+.navbar-brand{
+    display: flex;
+    align-items: center;
+    align-self: center;
+}
