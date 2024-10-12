@@ -66,7 +66,7 @@ select {
 }
 
 .dentistas {
-  border: 1px solid black;
+ //border: 1px solid black;
   display: flex;
   justify-content: center;
   // align-items: center; centraliza verticalmente 
@@ -76,7 +76,7 @@ select {
 
 ul {
   padding: 10px 10px 10px 10px;
-  border: solid 1px black;
+  //border: solid 1px black;
   width: 500px;
 }
 
@@ -94,6 +94,8 @@ li{
   text-align: left;
   height: 68%;
   padding:10px;
+  border-radius: 10px;
+  
  
 }
 
@@ -104,4 +106,48 @@ li{
 
 .btn{
   margin-bottom: 20px;
+}
+
+.titulo{
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.dentista-detalhes{
+  border-radius: 10px;
+  background-color: rgb(210, 214, 209); 
+  margin-bottom: 30px;
+}
+
+.alinha-imagem{
+  display: flex;
+  justify-content: center;
+}
+
+.bg-body-tertiary {
+  --bs-bg-opacity: 1;
+  background-color: rgb(60, 170, 124) !important;
+}
+img{
+  height: 40px;
+  padding-right:10px ;
+}
+
+.navbar-brand{
+  display: flex;
+  align-items: center;
+  align-self: center;
+}
+
+.alinha-links{
+  justify-content: space-between;
+}
+
+a{
+  cursor: pointer;
+  padding-left: 20px;
+  text-decoration: none;
+  color:white;
+  font-weight: bold;
+  font-size: 15px;
 }
