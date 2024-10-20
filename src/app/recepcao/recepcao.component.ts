@@ -17,14 +17,21 @@ export class RecepcaoComponent {
   idDentista: string = '0';
   dentistaSelecionado: any = 0;
 
-  // toggleRecepcao() {
-  //   this.showRecepcao = '1';
-  // }
+  //Show recepção:
+  // 0 = Nada
+  // 1 = Recepção
+  // 2 = Tela de resultados da pesquisa
+  // 3 = Tela de cadastro dos dentistas
+  // 4 = Tela de agendamento de consulta
 
+  //idDentista = ID que vem do banco de dados (atribuido automaticamente ao fazer o cadastro)
+  //dentistaSelecionado = atribuido ao clicar no dentista depois da pesquisa, assume o ID do dentista
+  
   checaVariavel() {
     console.log(this.showDentista);
   }
 
+  //setShowDentista faz a variável "dentistaSelecionado" assumir o valor do ID do dentista
   setShowDentista(dentistaId: number) {
     this.showDentista = dentistaId;
     console.log('Id do show dentista agora é: ', this.showDentista);

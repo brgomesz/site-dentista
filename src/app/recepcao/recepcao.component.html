@@ -7,8 +7,12 @@
       <h3>DENTISTA WEB</h3>
     </a>
     <div class="alinha-links">
-      <a class="link" (click)="showRecepcao = '1'; dentistaSelecionado = null">Homepage</a>
-      <a class="link" (click)="showRecepcao = '3'; dentistaSelecionado = null"> Cadastro</a>
+      <a class="link" (click)="showRecepcao = '1'; dentistaSelecionado = null"
+        >Homepage</a
+      >
+      <a class="link" (click)="showRecepcao = '3'; dentistaSelecionado = null">
+        Cadastro do dentista</a
+      >
     </div>
   </div>
 </nav>
@@ -118,11 +122,14 @@
           />
         </div>
       </div>
+      <button class="btn btn-primary" (click)="showRecepcao = '4'">
+        Agendar Consulta
+      </button>
     </div>
   </div>
   <div *ngIf="showRecepcao == '3'">
-    <div>
-      <div class="mb-3">
+    <div class="agendamento-consultas">
+      <div>
         <label for="nomeClinica" class="form-label">Nome da Clinica</label>
         <input
           type="email"
@@ -169,5 +176,48 @@
       </div>
     </div>
     <button class="btn btn-primary">Submit</button>
+  </div>
+
+  <div *ngIf="showRecepcao == '4'">
+    <div class="agendamento-consultas">
+      <h3>AGENDE SUA CONSULTA </h3>
+      <h5>{{ dentistaSelecionado.nomeClinica }}</h5>
+      <h5>{{ dentistaSelecionado.nomeDentista }}</h5>
+      <br />
+      <label for="nomePaciente" class="form-label">Nome</label>
+      <input
+        type="text"
+        class="form-control"
+        id="nomePaciente"
+        placeholder="Digite Aqui"
+      />
+      <br />
+      <label for="endereço" class="form-label">Telefone para contato</label>
+      <input
+        type="phone"
+        class="form-control"
+        id="telefonePaciente"
+        placeholder="Digite Aqui"
+      />
+      <br />
+      <label for="emailPaciente" class="form-label">E-mail para contato</label>
+      <input
+        type="email"
+        class="form-control"
+        id="emailPaciente"
+        placeholder="Digite Aqui"
+      />
+      <br />
+      <label for="dataConsulta" class="form-label"
+        >Data de sua preferencia</label
+      >
+      <input
+        type="date"
+        class="form-control"
+        id="dataConsulta"
+        placeholder="Digite Aqui"
+      />
+    </div>
+    <button class="btn btn-primary">Agendar</button>
   </div>
 </div>
